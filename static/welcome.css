@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	color: white;
+}
+.barter {
+    height: 75px;
+    background-color: #D22E2E;
+	
+} 
+.body {
+	background: url(img/fon.png) no-repeat fixed;
+    background-size: 100%;
+}
+.body1{
+	background: url(img/mainfon.png) no-repeat fixed;
+    background-size: 100%;
+}
+ .logo{
+	background-image: url(img/logo.png);
+	width: 130px;
+	height: 75px;
+	left: 40px;
+	top: 0px;
+	border: none;
+}
+.knopka{
+	font-family: 'K2D';
+	background-color:#D22E2E;
+	position: absolute;
+	width: 226px;
+	height: 70px;
+	left: 194px;
+	top: 0px;
+	border: none;
+	font-family: 'K2D';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 34	px;
+	display: flex;
+	align-items: center;
+	text-align: center; 
+	color: #FFFFFF;
+} 
+.knopka2{
+	position: absolute;
+	width: 180px;
+	height: 70px;
+	left: 467px;
+	top: 0px;
+	background-color:#D22E2E;
+	font-family: 'K2D';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 42px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	border: none;
+}
+.knopka3{
+	position: absolute;
+	width: 200px;
+	height: 70px;
+	left: 720px;
+	top: 0px;
+	background-color:#D22E2E;
+	font-family: 'K2D';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 42px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	border: none;
+
+}
+.burger{
+	background-image: url(img/burger.png);
+	width: 54px;
+	height: 45px;
+	background-color:#D22E2E;
+	border: none;
+	position: absolute;
+	left: 1450px;
+	top: 14px;
+	border: 2px solid red;
+	}
+.lupa{
+    background: url(img/lupa.png) no-repeat;
+	padding: 15px;
+	position: absolute;
+	width: 62.32px;
+	height: 70px;
+	left: 1350px;
+	top: 5px;
+	color: #FFFFFF;
+	border: none; 
+} 
+.text{
+	position: absolute;
+	width: 730px;
+	height: 429.14px;
+	left: 70px;
+	top:170px;
+
+	font-family: 'Katibeh';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 84px;
+
+	color: #FFFFFF;
+}
+.podtext{
+	position: absolute;
+	width: 675px;
+	height: 65.8px;
+	left: 70px;
+	top: 340px;
+
+	font-family: 'Katibeh';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 48px;
+
+	color: #FFFFFF;
+}
+
+.vhodi1{
+	position: absolute;
+	width: 300px;
+	height: 70px;
+	left: 425px;
+	top: 555px;	
+	background: #D95353;
+	border-radius: 64px;
+	border: none;
+	font-family: 'Macondo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 38px;
+
+	color: #FFFFFF;
+
+}
+.vhodi2{
+	position: absolute;
+	width: 300px;
+	height: 70px;
+	left: 800px;
+	top: 555px;
+	background: #D95353;
+	border-radius: 64px;
+	border: none;
+	font-family: 'Macondo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 38px;
+	color: #FFFFFF;
+}

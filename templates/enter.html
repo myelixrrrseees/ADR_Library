@@ -3,21 +3,21 @@
 <head>
 <title> ADR Library </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon"> 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-    <link rel="stylesheet" href="regestration.css" type="text/css" >
+    <link rel="stylesheet" href="static/regestration.css" type="text/css" >
 </head>
-<body class="body" background="../mainfon.png">
-   <form action="">
+<body class="body" background="static/img/mainfon.png">
+   <form method="post">
     <h1 title="Форма входа на сайте">Вход</h1>
     <div class="group">
         <label for="">Имя пользователя</label>
-        <input type="text">
+        <input type="text" name="vhod_name" id="vhod_name">
     </div>
 
     <div class="group">
         <label for="">Пароль</label>
-        <input type="text">
+        <input type="password" name="vhod_password" id="vhod_password">
     </div>
 
     <div class="group">

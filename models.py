@@ -1,4 +1,4 @@
-from app import db
+from config import db
 
 
 class Login(db.Model):
