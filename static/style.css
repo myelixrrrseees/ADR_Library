@@ -49,26 +49,21 @@ table {
 .barter {
     height: 100px;
     background-color: red;
+	
 }
-.body{
-    background: url(knigi_2.png) no-repeat fixed;
+.body {
+	background: url(../knigi 2.png) no-repeat fixed;
     background-size: 100%;
 }
-.body2{
-	background: url(black.jpg) no-repeat fixed;
-}
 .knopka{
-	/* height: 100px; */
-	/* margin-left: 196px; */
 	font-family: 'K2D';
-	border: 2px solid black;
 	background-color: red;
 	position: absolute;
 	width: 226px;
 	height: 101px;
 	left: 224px;
 	top: 0px;
-
+	border: 2px solid red;
 	font-family: 'K2D';
 	font-style: normal;
 	font-weight: 500;
@@ -94,6 +89,7 @@ table {
 	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
+	border: 2px solid red;
 }
 .knopka3{
 	position: absolute;
@@ -110,16 +106,25 @@ table {
 	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
+	border: 2px solid red;
 
 }
+.burger{
+	background-image: url(../Бургер.png);
+	width: 50px;
+	height: 43px;
+	background-color: red;
+	border: 2px solid red;
+}
 .lupa{
-    background: url(lupa.png) no-repeat;
+    background: url(../lupa.png) no-repeat;
 	padding: 15px;
 	position: absolute;
 	width: 62.32px;
 	height: 100px;
 	left: 1350px;
 	color: #FFFFFF;
+	border: 2px solid red;
 }
 .text{
 	position: absolute;
