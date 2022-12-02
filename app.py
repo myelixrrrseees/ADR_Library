@@ -1,23 +1,52 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'mnjndjks ndvdsmvdsv mkdnjcbvc nm jdnjdvnkdk 2884732 mvnjcvxvbfv1'
+app.debug = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.app_context()
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///AUTH.db'
+db = SQLAlchemy(app)
 
 
 @app.route('/')
 @app.route('/home')
-def index():
-    return render_template("project.html")
+def home():
+    return render_template("home.html")
 
 
-@app.route('/about')
-def about():
-    return "About page"
+@app.route('/base')
+def base():
+    return render_template("base_page_of_book.html")
 
 
-@app.route('/user/<string:name>/<int:id>')
-def user(name, id):
-    return "User page" + name + " - " + str(id)
+@app.route('/enter')
+def enter():
+    return render_template("enter.html")
+
+
+@app.route('/registr')
+def registr():
+    from models import Login
+    if request.method == "POST":
+        name = request.form['name']
+        password = request.form['password']
+    
+        login = Login(name=name, password=password)
+    
+        try:
+            db.session.add(login)
+            db.session.commit()
+            return redirect('/')
+        except:
+            return "Регистрация не прошла успешно"
+    else:
+        return render_template("registr.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
+
+

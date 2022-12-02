@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	font-family: Tahoma;
+	background: ffffff;
+	margin: 0;
+}
+h1{
+	cursor: help;
+	margin: 0px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 3px solid red;
+}
+form{
+	margin: 95px 540px ; 
+	background: rgba(250, 249, 249, 0.952);
+	width: 459px;
+	height: 500px;
+	padding: 20px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+	background: #FDD0D0;
+	border: 2px solid red;
+	border-radius: 16px;
+
+}
+.group{ 
+	margin: 21px 10px 10px 10px;
+	padding: 5px;
+}
+label{
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+input{
+	margin-top: 10px;
+	height: 40px;
+	width: 400px;
+	border-radius: 20px/20px;
+	border: none;
+	padding-left: 15px;
+	font-size: 18px;
+}
+input:focus{
+	border: 2px solid red;
+	transform: translateX(15px);
+	width: 385px;
+}
+button{
+	margin-top: 35px;
+	cursor: pointer;
+	padding: 10px 30px;
+	height: 50px;
+	color: white;
+	background: orangered;
+	border: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0,0, 0,82);
+	border-radius: 24px;
+}
+button:hover{
+	opacity: .80;
+	font-weight: bold;
+	transform: scale(1.1);
+}
+/* поиск по жанру по автору и тд по году выпуска */
