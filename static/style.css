@@ -52,7 +52,7 @@ table {
 	
 }
 .body {
-	background: url(../knigi 2.png) no-repeat fixed;
+	background: url(knigi_2.pngS) no-repeat fixed;
     background-size: 100%;
 }
 .knopka{
@@ -110,14 +110,14 @@ table {
 
 }
 .burger{
-	background-image: url(../Бургер.png);
+	background-image: url(Burger.png);
 	width: 50px;
 	height: 43px;
 	background-color: red;
 	border: 2px solid red;
 }
 .lupa{
-    background: url(../lupa.png) no-repeat;
+    background: url(lupa.png) no-repeat;
 	padding: 15px;
 	position: absolute;
 	width: 62.32px;

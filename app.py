@@ -27,7 +27,7 @@ def enter():
     return render_template("enter.html")
 
 
-@app.route('/registr')
+@app.route('/registr', methods=['GET', 'POST'])
 def registr():
     from models import Login
     if request.method == "POST":
