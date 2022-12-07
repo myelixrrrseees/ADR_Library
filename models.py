@@ -1,9 +1,8 @@
 from __init__ import db
-from werkzeug.security import generate_password_hash, check_password_hash
-from datetime import datetime
+from flask_login import UserMixin
 
 
-class Users(db.Model):
+class Users(UserMixin, db.Model):
     __tablename__ = 'Users'
 
     id = db.Column(db.Integer(), primary_key=True)
@@ -21,6 +20,9 @@ class Books(db.Model):
     language = db.Column(db.String(50), nullable=False)
     year = db.Column(db.Integer())
     pages = db.Column(db.Integer())
+
+
+
 
 
 

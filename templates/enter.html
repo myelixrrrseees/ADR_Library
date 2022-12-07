@@ -10,14 +10,27 @@
 <body class="body" background="static/img/mainfon.png">
    <form method="post">
     <h1 title="Форма входа на сайте">Вход</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form method="post" action="/">
     <div class="group">
-        <label for="">Имя пользователя</label>
-        <input type="text" name="vhod_name" id="vhod_name">
+        <label for="">Email пользователя</label>
+        <input type="email" name="email" id="email">
     </div>
-
     <div class="group">
         <label for="">Пароль</label>
-        <input type="password" name="vhod_password" id="vhod_password">
+        <input type="password" name="password" id="password">
+    </div>
+    <div class="field">
+        <label class="checkbox">
+            <input type="checkbox">
+            Remember me
+        </label>
     </div>
 
     <div class="group">

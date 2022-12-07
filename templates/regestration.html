@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="static/regestration.css" type="text/css" >
 </head>
 <body class="body" background="static/img/mainfon.png">
+   <form method="post" action="/regestration">
+    <h1 title="Форма регистрации на сайте">Регистрация</h1>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
-        <div class="notification is-danger">
+        <br><div class="notification is-danger">
             {{ messages[0] }}. Go to login page.
         </div>
     {% endif %}
     {% endwith %}
-   <form method="post">
-    <h1 title="Форма регистрации на сайте">Регистрация</h1>
        <div class="group">
-        <label for="">Имэйл</label>
+        <label for="">Имэйл пользователя</label>
         <input class="input is-large" type="email" name="user_email" id="user_email">
     </div>
 

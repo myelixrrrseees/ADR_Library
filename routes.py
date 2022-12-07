@@ -1,7 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-
+from flask_login import login_user
+from __init__ import login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
-from __init__ import app, db
+from __init__ import app
+from models import db
+from models import Users
+
+
+@login_manager.user_loader
+def load_user(id):
+    return Users.query.get(id)
 
 
 @app.route('/')
@@ -10,30 +18,31 @@ def welcome():
     return render_template("welcome.html")
 
 
-@app.route('/mainpage')
-def main_page():
-    return render_template("mainpage.html")
-
-
 @app.route('/library')
 def library():
     return render_template("library.html")
 
 
-@app.route('/enter')
+@app.route('/enter', methods=['GET', 'POST'])
 def enter():
-    return render_template("enter.html")
+    if request.method == "POST":
+        email = request.form['email']
+        password = request.form['password']
+        remember = True if request.form.get('remember') else False
 
+        user = Users.query.filter_by(email=email).first()
 
-@app.route('/news')
-def news():
-    return render_template("news.html")
+        if not user or not check_password_hash(user.password, password):
+            flash('Please check your login details and try again.')
+            return redirect('/enter')
+        login_user(user, remember=remember)
+        return redirect('/library')
+    else:
+        return render_template("enter.html")
 
 
 @app.route('/regestration', methods=['GET', 'POST'])
 def regestration():
-    from models import Users
-
     if request.method == "POST":
 
         email = request.form['user_email']
@@ -41,9 +50,9 @@ def regestration():
         password = request.form['user_password']
         second_password = request.form['second_user_password']
 
-        user = Users.query.filter_by(email=email)
+        user = Users.query.filter_by(email=email, name=name).first()
 
-        if user :
+        if user:
             flash('Email already exists')
             return redirect('/regestration')
 
@@ -53,13 +62,14 @@ def regestration():
 
             db.session.add(login)
             db.session.commit()
-            return redirect('/mainpage')
+            return redirect('/library')
         else:
-            flash('Password is not correct. Try one more.')
+            flash('Second password is not correct. Try one more.')
             return redirect('/regestration')
 
-    else: return render_template("regestration.html")
+    else:
+        return render_template("regestration.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=6060)
