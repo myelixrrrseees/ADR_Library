@@ -7,3 +7,7 @@
 1. flask
 2. werkzeug.security
 3. sqlite3 ( В Pycharm он уже встроен )
+
+
+Скачать
+    Внизу pycherm находится термил. В нем прописываем pip install ...(название пакета)
