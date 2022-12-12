@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -56,7 +56,7 @@ a:hover {
 .barter {
     height: 75px;
     background-color: #D22E2E;
-	
+
 }
 .body {
 	background: url(img/fon.png) no-repeat fixed;
@@ -89,9 +89,9 @@ a:hover {
 	line-height: 34	px;
 	display: flex;
 	align-items: center;
-	text-align: center; 
+	text-align: center;
 	color: #FFFFFF;
-} 
+}
 .knopka2{
 	position: absolute;
 	width: 180px;
@@ -129,19 +129,18 @@ a:hover {
 	border: none;
 
 }
-.burger{
-	background-image: url(img/burger.png);
-	width: 54px;
-	height: 45px;
+.acount{
+	background-image: url(img/acc.png);
+	width: 58px;
+	height: 51px;
 	background-color:#D22E2E;
 	border: none;
 	position: absolute;
-	left: 1450px;
-	top: 14px;
-	border: 2px solid red;
+	left: 1442px;
+	top: 10px;
 	}
-.lupa{
-    background: url(img/lupa.png) no-repeat;
+/* .lupa{
+    background: url(../lupa.png) no-repeat;
 	padding: 15px;
 	position: absolute;
 	width: 62.32px;
@@ -150,4 +149,68 @@ a:hover {
 	top: 5px;
 	color: #FFFFFF;
 	border: none;
+} */
+.conteiner{
+	margin-left: 60px;
+	margin-top: 20px;
+	top: 150px;
+	height: 801px;
+	width: 1360px;
+	border: 2px solid red;
+	border-radius: 24px;
+	float:left;
+}
+.searcher{
+	margin-left: 20px;
+	margin-top: 20px;
+	top: 150px;
+	height: 801px;
+	width: 300px;
+	border: 2px solid red;
+	border-radius: 24px;
+	float:left;
+	background-color: black;
+	opacity: 0.4;
+}
+.booker{
+	margin-left: 30px;
+	margin-top: 20px;
+	top: 150px;
+	height: 801px;
+	width: 970px;
+	border: 2px solid red;
+	border-radius: 24px;
+	float:left;
+	background-color: black;
+	opacity: 0.3;
+
+}
+.php{
+	border: 2px solid red;
+	border-radius: 24px;
+	width: 280px;
+	height: 35px;
+	margin: 8px;
+}
+filter{
+	margin-left: 20px;
+	margin-top: 20px;
+	top: 150px;
+	height: 801px;
+	width: 300px;
+	border: 2px solid red;
+	border-radius: 24px;
+	float:top;
+	background-color: black;
+}
+.book{
+	/* background-color: black; */
+	width: 200px;
+	height: 250px;
+	border: 2px solid yellow;
+	float: left;
+	margin: 12px;
+	border-radius: 14px;
+	margin-left: 26px;
+	/* z-index: 1; */
 }
