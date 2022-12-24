@@ -53,110 +53,66 @@ a {
 a:hover {
 	color: white;
 }
-.barter {
-    height: 75px;
-    background-color: #D22E2E;
 
-}
 .body {
 	background: url(img/fon.png) no-repeat fixed;
     background-size: 100%;
 }
 .body1{
-	background: url(img/mainfon.png) no-repeat fixed;
+	background: url(img/mainfonn.png) no-repeat fixed;
     background-size: 100%;
 }
 .logo{
-	background-image: url(img/logo.png);
+	background-image: url(img/logotipchik.png);
 	width: 130px;
 	height: 75px;
-	left: 40px;
-	top: 0px;
+	left: 5px;
+	top: 25px;
+	margin-top: 29px;
+	margin-left: 80px;
+}
+a{
+	color: #514C4C;
+	text-decoration: none;
+}
+a:hover{
+	color: #514C4C;
 }
 .knopka{
-	font-family: 'K2D';
-	background-color:#D22E2E;
 	position: absolute;
-	width: 226px;
-	height: 70px;
-	left: 194px;
-	top: 0px;
-	border: none;
-	font-family: 'K2D';
+	width: 163px;
+	height: 127px;
+	left: 260px;
+	top: 1px;
+	font-family: 'PT Serif';
 	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 34	px;
-	display: flex;
-	align-items: center;
+	font-weight: 400;
+	font-size: 89px;
+	line-height: 127px;
 	text-align: center;
-	color: #FFFFFF;
+	border: none;
+	background:none;
+	color: #514C4C;
 }
-.knopka2{
-	position: absolute;
-	width: 180px;
-	height: 70px;
-	left: 467px;
-	top: 0px;
-	background-color:#D22E2E;
-	font-family: 'K2D';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 42px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #FFFFFF;
-	border: none;
-}
-.knopka3{
-	position: absolute;
-	width: 200px;
-	height: 70px;
-	left: 720px;
-	top: 0px;
-	background-color:#D22E2E;
-	font-family: 'K2D';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 42px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #FFFFFF;
-	border: none;
 
-}
 .acount{
 	background-image: url(img/acc.png);
 	width: 58px;
 	height: 51px;
-	background-color:#D22E2E;
+	background-color:#CFCCCC;
 	border: none;
 	position: absolute;
 	left: 1442px;
-	top: 10px;
+	top: 16px;
+	border-radius: 18px;
 	}
-/* .lupa{
-    background: url(../lupa.png) no-repeat;
-	padding: 15px;
-	position: absolute;
-	width: 62.32px;
-	height: 70px;
-	left: 1350px;
-	top: 5px;
-	color: #FFFFFF;
-	border: none;
-} */
+
 .conteiner{
 	margin-left: 60px;
-	margin-top: 20px;
+	margin-top: 40px;
 	top: 150px;
 	height: 801px;
-	width: 1360px;
-	border: 2px solid red;
+	width: 1345px;
 	border-radius: 24px;
 	float:left;
 }
@@ -164,53 +120,100 @@ a:hover {
 	margin-left: 20px;
 	margin-top: 20px;
 	top: 150px;
-	height: 801px;
-	width: 300px;
-	border: 2px solid red;
+	height: 610px;
+	width: 280px;
+	border: 2px solid #D1F3F5;
 	border-radius: 24px;
+	border: 1px solid black;
 	float:left;
-	background-color: black;
-	opacity: 0.4;
+	/* background-color: #C6DBDD; */
+	background-color:rgba(198,219,221,0.8);
 }
 .booker{
-	margin-left: 30px;
+	margin-left: 50px;
 	margin-top: 20px;
 	top: 150px;
-	height: 801px;
-	width: 970px;
-	border: 2px solid red;
+	height: 651px;
+	width: 930px;
+	border: 2px solid #D1F3F5;
 	border-radius: 24px;
 	float:left;
-	background-color: black;
-	opacity: 0.3;
-
+	background-color:rgba(198,219,221,0.8);
+	border: 1px solid black;
 }
 .php{
-	border: 2px solid red;
+	border: 2px solid #D1F3F5;
 	border-radius: 24px;
-	width: 280px;
+	width: 262px;
 	height: 35px;
 	margin: 8px;
+	border: 1px solid black;
 }
-filter{
-	margin-left: 20px;
-	margin-top: 20px;
-	top: 150px;
-	height: 801px;
-	width: 300px;
-	border: 2px solid red;
-	border-radius: 24px;
-	float:top;
-	background-color: black;
-}
+
 .book{
-	/* background-color: black; */
-	width: 200px;
-	height: 250px;
-	border: 2px solid yellow;
+	width: 245px;
+	height: 370px;
+	border: 1px solid black;
 	float: left;
 	margin: 12px;
 	border-radius: 14px;
 	margin-left: 26px;
-	/* z-index: 1; */
+}
+.podsearcher{
+	border: 2px solid #D1F3F5;
+	padding-left: 60px;
+	height: 520px;
+	background-color: white;
+	border-radius: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+.janr{
+	width: 100px;
+	height: 50px;
+	font-family: 'PT Serif';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 32px;
+	line-height: 22px;
+	text-decoration-line: underline;
+	margin-top: 32px;
+	margin-left: -20px;
+	color: #000000;
+}
+.intobook{
+	height: 270px;
+	width: 220px;
+	border: 1px solid black;
+	border-radius: 36px;
+	margin: 10px;
+}
+.namebook{
+	height: 25px;
+	width: 210px;
+	border: 2px solid black;
+	margin-left: 14px;
+}
+.read{
+	margin-top: 14px;
+	height: 25px;
+	width: 150px;
+	margin-left: 1px;
+	padding: 3px;
+	border-radius: 24px;
+	padding-left: 49px;
+	float: left;
+	background-color: white;
+
+}
+.like{
+    background-image: url(img/like.png);
+	height: 25px;
+	width: 25px;
+	float: left;
+	margin-top: 14px;
+	margin-left: 26px;
+	border-radius: 26px;
 }

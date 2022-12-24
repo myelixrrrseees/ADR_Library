@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -56,14 +56,14 @@ a:hover {
 .barter {
     height: 75px;
     background-color: #D22E2E;
-	
-} 
+
+}
 .body {
-	background: url(img/fon.png) no-repeat fixed;
+	background: url(img/fonn.png) no-repeat fixed;
     background-size: 100%;
 }
 .body1{
-	background: url(img/mainfon.png) no-repeat fixed;
+	background: url(img/fonn.png) no-repeat fixed;
     background-size: 100%;
 }
  .logo{
@@ -90,56 +90,19 @@ a:hover {
 	line-height: 34	px;
 	display: flex;
 	align-items: center;
-	text-align: center; 
-	color: #FFFFFF;
-} 
-.knopka2{
-	position: absolute;
-	width: 180px;
-	height: 70px;
-	left: 467px;
-	top: 0px;
-	background-color:#D22E2E;
-	font-family: 'K2D';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 42px;
-	display: flex;
-	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
-	border: none;
 }
-.knopka3{
-	position: absolute;
-	width: 200px;
-	height: 70px;
-	left: 720px;
-	top: 0px;
+.acount{
+	background-image: url(img/acc.png);
+	width: 58px;
+	height: 51px;
 	background-color:#D22E2E;
-	font-family: 'K2D';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 42px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #FFFFFF;
 	border: none;
+	position: absolute;
+	left: 1442px;
+	top: 10px;
 
-}
-.burger{
-	background-image: url(img/burger.png);
-	width: 54px;
-	height: 45px;
-	background-color:#D22E2E;
-	border: none;
-	position: absolute;
-	left: 1450px;
-	top: 14px;
-	border: 2px solid red;
 	}
 .lupa{
     background: url(img/lupa.png) no-repeat;
@@ -150,8 +113,8 @@ a:hover {
 	left: 1350px;
 	top: 5px;
 	color: #FFFFFF;
-	border: none; 
-} 
+	border: none; */
+}
 .text{
 	position: absolute;
 	width: 730px;
@@ -165,7 +128,7 @@ a:hover {
 	font-size: 60px;
 	line-height: 84px;
 
-	color: #FFFFFF;
+	color: #1F1E1E;
 }
 .podtext{
 	position: absolute;
@@ -173,14 +136,12 @@ a:hover {
 	height: 65.8px;
 	left: 70px;
 	top: 340px;
-
 	font-family: 'Katibeh';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 48px;
-
-	color: #FFFFFF;
+	color: #1F1E1E;
 }
 
 .vhodi1{
@@ -188,32 +149,31 @@ a:hover {
 	width: 300px;
 	height: 70px;
 	left: 425px;
-	top: 555px;	
-	background: #D95353;
+	top: 555px;
+	background: #C0D4D6;
 	border-radius: 64px;
-	border: none;
+	border: 1px solid black;
 	font-family: 'Macondo';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 38px;
-
-	color: #FFFFFF;
-
+	color: #1F1E1E;
 }
+
 .vhodi2{
 	position: absolute;
 	width: 300px;
 	height: 70px;
 	left: 800px;
 	top: 555px;
-	background: #D95353;
+	background: #C0D4D6;
 	border-radius: 64px;
-	border: none;
+	border: 1px solid black;
 	font-family: 'Macondo';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 38px;
-	color: #FFFFFF;
+	color: #1F1E1E;
 }

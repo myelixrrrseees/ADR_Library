@@ -1,7 +1,9 @@
 from FDataBase import FDataBase
+from flask_login import UserMixin
+from flask import url_for
 
 
-class UserLogin():
+class UserLogin(UserMixin):
 
     def fromDB(self, user_id, db):
         try:
@@ -17,14 +19,26 @@ class UserLogin():
             print('Не успешно')
         return self
 
-    def is_authenticated(self):
-        return True
-
-    def is_active(self):
-        return True
-
-    def is_anonymous(self):
-        return False
-
     def get_id(self):
         return str(self.__user['id'])
+
+    def getName(self):
+        return self.__user['name'] if self.__user else "Без имени"
+
+    def getEmail(self):
+        return self.__user['email'] if self.__user else "Без email"
+
+    def getAvatar(self, app):
+        img = None
+        try:
+            img = self.__user['avatar']
+        except FileNotFoundError as e:
+            print(e)
+
+        return img
+
+    def verifyExt(self, filename):
+        ext = filename.rsplit('.', 1)[1]
+        if ext == "png" or ext == "PNG":
+            return True
+        return False

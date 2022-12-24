@@ -53,130 +53,105 @@ a {
 a:hover {
 	color: white;
 }
-.barter {
-    height: 75px;
-    background-color: #D22E2E;
-	
-} 
 .body {
-	background: url(../fon.png) no-repeat fixed;
+	background: url(img/mainfonn.png) no-repeat fixed;
     background-size: 100%;
 }
-.body1{
-	background: url(../mainfon.png) no-repeat fixed;
-    background-size: 100%;
-}
- .logo{
-	background-image: url(../logo.png);
-	width: 130px;
-	height: 75px;
-	left: 40px;
-	top: 0px;
-	border: none;
-}
+
 .knopka{
-	font-family: 'K2D';
-	background-color:#D22E2E;
 	position: absolute;
-	width: 226px;
-	height: 70px;
-	left: 194px;
-	top: 0px;
-	border: none;
-	font-family: 'K2D';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 34	px;
-	display: flex;
-	align-items: center;
-	text-align: center; 
-	color: #FFFFFF;
-} 
-.acount{
-	background-image: url(../acc.png);
-	width: 58px;
-	height: 51px;
-	background-color:#D22E2E;
-	border: none;
-	position: absolute;
-	left: 1442px;
-	top: 10px;
-
-	}
-.lupa{
-    background: url(../lupa.png) no-repeat;
-	padding: 15px;
-	position: absolute;
-	width: 62.32px;
-	height: 70px;
-	left: 1350px;
-	top: 5px;
-	color: #FFFFFF;
-	border: none; */
-} 
-.text{
-	position: absolute;
-	width: 730px;
-	height: 429.14px;
-	left: 70px;
-	top:170px;
-
-	font-family: 'Katibeh';
+	width: 163px;
+	height: 127px;
+	left: 260px;
+	top: 1px;
+	font-family: 'PT Serif';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 60px;
-	line-height: 84px;
-
-	color: #FFFFFF;
-}
-.podtext{
-	position: absolute;
-	width: 675px;
-	height: 65.8px;
-	left: 70px;
-	top: 340px;
-
-	font-family: 'Katibeh';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 48px;
-
-	color: #FFFFFF;
+	font-size: 89px;
+	line-height: 127px;
+	text-align: center;
+	border: none;
+	background:none;
+	color: #514C4C;
 }
 
-.vhodi1{
-	position: absolute;
-	width: 300px;
-	height: 70px;
-	left: 425px;
-	top: 555px;	
-	background: #D95353;
-	border-radius: 64px;
-	border: none;
-	font-family: 'Macondo';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 38px;
-
-	color: #FFFFFF;
-} 
- 
-.vhodi2{
-	position: absolute;
-	width: 300px;
-	height: 70px;
-	left: 800px;
-	top: 555px;
-	background: #D95353;
-	border-radius: 64px;
-	border: none;
-	font-family: 'Macondo';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 38px;
-	color: #FFFFFF;
+a{
+	color: #514C4C;
+	text-decoration: none;
 }
+a:hover{
+	color: #514C4C;
+}
+.logo{
+	background-image: url(img/logotipchik.png);
+	width: 129px;
+	height: 75px;
+	left: 5px;
+	top: 25px;
+	margin-top: 29px;
+	margin-left: 80px;
+	background-color:rgba(198,219,221,0.8);
+}
+.avatar{
+    border: 1px solid black;
+	height: 199px;
+	width: 199px;
+	border-radius: 96px;
+	margin-left: 673px;
+	margin-top: 28px;
+}
+.favorite{
+	height: 30px;
+	width: 600px;
+	border: 1px solid black;
+	margin-left: 470px;
+	margin-top: 30px;
+	border-radius: 12px;
+	background-color:rgba(198,219,221,0.8);
+}
+.favoritebook{
+	height: 250px;
+	width: 600px;
+	border: 1px solid black;
+	margin-left: 470px;
+	margin-top: 15px;
+	border-radius: 12px;
+	background-color:rgba(198,219,221,0.8);
+}
+.nickname{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 32px;
+	height: 36px;
+	width: 120px;
+	border: 1px solid black;
+	margin-left: 705px;
+	margin-top: 15px;
+	border-radius: 12px;
+}
+.pi{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+p{
+	color: #514C4C;
+	font-size: 25px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.closebutton{
+	height: 35px;
+	width: 120px;
+	border: 1px solid black;
+	border-radius: 12px;
+	background-color:rgba(198,219,221,0.8);
+	color: rgb(81,76,76);
+}
+.close{
+	margin-left: 1390px;
+	font-size: 30px;
+}
+

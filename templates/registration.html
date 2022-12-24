@@ -7,8 +7,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <link rel="stylesheet" href="static/registration.css" type="text/css" >
 </head>
-<body class="body" background="static/img/mainfon.png">
-   <form method="post" action="/registration">
+<body class="body1">
+   <form method="post" action="">
     <h1 title="Форма регистрации на сайте">Регистрация</h1>
 
     {% with messages = get_flashed_messages() %}
@@ -37,9 +37,6 @@
         
     <div class="group">
         <center><button class="button is-block is-info">Зарегестрироваться</button></center>
-    </div>
-    <div>
-        <center><a href="/enter" style="color: #DC143C">Войти</a>, если у вас есть аккаунт.</center>
     </div>
    </form>
 </body>

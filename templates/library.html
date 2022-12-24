@@ -7,42 +7,66 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <link rel="stylesheet" href="static/library.css" type="text/css" >
 </head>
-<body class="body1" background="static/img/mainfon.png">
+<body class="body1">
     <body class="body2">
         <div class="page.menu">
-            <div class="barter">
                 <div class="logo"></div>
                 <button class="knopka"><a href="/library">Библиотека</a></button>
-                <!-- <button class="lupa"></button> -->
-                <!-- <button class="acount"><a href="account.html"></a></button> -->
                 <form action="/account">
                     <button class="acount" type="submit"></button>
                 </form>
-            </div>
             <div class="conteiner">
-                <div class="searcher">
-                    <form>
-                        <p><input class="php" type="search" name="q" placeholder="Поиск по сайту">
-                    </form>
-                    <div class="filter">
+                <div class="searcher"> <!--поисковая таблица с жанрами-->
 
+                       <!-- <p><input class="php" type="search" name="q" placeholder="Поиск по сайту"></p>  -->
+                       <div class="d7">
+                        <form>
+                          <input class="php" type="text" placeholder="Искать здесь...">
+                        </form>
+                        </div>
+
+
+                    <div class="filter">
+                        <ul class="podsearcher">
+                            <li class="janr">
+                                Детектив
+                            </li>
+                            <li class="janr">
+                                Классика жанра
+                            </li>
+                            <li class="janr">
+                                Фантастика
+                            </li>
+                            <li class="janr">
+                                Приключения
+                            </li>
+                            <li class="janr">
+                                Детские книги
+                            </li>
+                            <li class="janr">
+                                Романы
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="booker">
+                    {% for m in menu %}
                     <div class="book">
+                        <div class="intobook">
+                            <img src="{{ m.photo }}" width="220" height="270" style="border-radius: 36px">
+                        </div>
+                        <div class="namebook">
+                            <p>тут может быть ваша реклама</p>
+                        <div class="read">
+                            <p>Читать</p>
+                        </div>
+                        <div class="like">
 
+                        </div>
                     </div>
-                    <div class="book">
+                    </div>
+                    {% endfor %}
 
-                    </div>
-                    <div class="book">
-
-                    </div>
-                    <div class="book">
-
-                    </div>
-                </div>
-            </div>
         </div>
     </body>
 </body>

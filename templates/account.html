@@ -5,13 +5,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-    <link rel="stylesheet" href="static/account.css" type="text/css" >
+    <link rel="stylesheet" href="static/aсcount.css" type="text/css" >
 </head>
-<body class="body" background="static/img/mainfon.png">
+<body class="body">
     <body class="body2">
-        <p>user info: {{ acc_id }}</p>
-        <p><a href="/logout">Выйти из аккаунта</a></p>
-        <p><a href="/library">Библиотека</a></p>
+            <div class="page.menu">
+            <div class="logo"></div>
+            <a href="/library"><button class="knopka">Библиотека</button></a>
+            </div>
+            <div class="avatar"><img src="{{ ('/userava') }}" height="197" width="197" style="border-radius: 96px"></div>
+
+            <center><div>
+                <form action="{{ ('/upload') }}" method="POST" enctype="multipart/form-data">
+                    <p><input type="file" name="file"></p>
+                    <p><input type="submit" value="Загрузить"></p>
+                </form>
+            </div>
+            </center>
+            <div class="nickname">
+                <p class="pi">{{ current_user.getName() }}</p>
+            </div>
+
+        <div class="favorite">
+                <p>Избранное</p>
+            </div>
+
+    <div class="favoritebook"></div>
+            <div class="close">
+                <a href="{{ ('/logout') }}"><button class="closebutton">Выход</button>></a>
+            </div>
+
     </body>
 </body>
 </html>

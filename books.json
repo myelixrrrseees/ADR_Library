@@ -1,16 +1,18 @@
 [
+{
+  "id": 1,
+  "book": "Путешествия Души",
+  "photo": "https://avidreaders.ru/pics/5/6/110856.jpeg"
+},
+
+{
+  "id": 2,
+  "book": "Отцы и дети",
+  "photo": "https://avidreaders.ru/pics/8/4/384.jpg"
+},
   {
-    "title": "Things Fall Apart",
-    "author": "Chinua Achebe",
-    "language": "English",
-    "year": 1958,
-    "pages": 209
-  },
-  {
-    "title": "Fairy tales",
-    "author": "Hans Christian Andersen",
-    "language": "Danish",
-    "year": 1836,
-    "pages": 784
+    "id": 3,
+    "book": "Запах золота",
+    "photo": "https://avidreaders.ru/pics/5/7/81657.jpg"
   }
 ]

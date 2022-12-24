@@ -1,6 +1,15 @@
 import sqlite3
 import time
 import math
+from PIL import Image
+
+
+def convert_data(data, file_name):
+
+    with open(file_name, 'wb') as file:
+        file.write(data)
+    img = Image.open(file_name)
+    return img
 
 
 class FDataBase:
@@ -8,7 +17,7 @@ class FDataBase:
         self.__db = db
         self.__cur = db.cursor()
 
-    def getMenu(self):
+    def getMenuUser(self):
         sql = '''SELECT * FROM users'''
         try:
             self.__cur.execute(sql)
@@ -17,6 +26,19 @@ class FDataBase:
                 return res
         except:
             print("Ошибка чтения из БД")
+        return []
+
+    def getMenuBook(self):
+        sql = '''SELECT * FROM books'''
+        try:
+            self.__cur.execute(sql)
+            res = self.__cur.fetchall()
+            if res:
+                return res
+
+        except:
+            print("Ошибка чтения из БД")
+
         return []
 
     def addUser(self, email, name, password):
@@ -34,7 +56,7 @@ class FDataBase:
                 return False
 
             tm = math.floor(time.time())
-            self.__cur.execute("INSERT INTO users VALUES(NULL, ?, ?, ?, ?)", (email, name, password, tm))
+            self.__cur.execute("INSERT INTO users VALUES(NULL, ?, ?, ?, NULL, ?)", (email, name, password, tm))
             self.__db.commit()
         except sqlite3.Error as e:
             print("Ошибка добавления в БД " + str(e))
@@ -69,3 +91,20 @@ class FDataBase:
             print("Ошибка получения данных из БД" + str(e))
 
         return False
+
+    def updateUserAvatar(self, avatar, user_id):
+        if not avatar:
+            return False
+
+        try:
+            binary = sqlite3.Binary(avatar)
+            self.__cur.execute(f"UPDATE users SET avatar = ? WHERE id = ?", (binary, user_id))
+            self.__db.commit()
+        except sqlite3.Error as e:
+            print("Ошибка обновления аватара в БД " + str(e))
+            return False
+
+        return True
+
+
+
